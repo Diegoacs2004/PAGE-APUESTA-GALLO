@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Document</title>
@@ -61,6 +62,23 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+=======
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/footer.css">
+</head>
+
+<body>
+    <div class="main-footer">
+        <footer class=" text-center bg-body-tertiary">
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2020 Copyright:
+                <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+        </footer>
+    </div>
+
+>>>>>>> 14b670b3b8282eae88f8a80a8d0f9bdfee76dd9a
 </body>
 
 </html>
