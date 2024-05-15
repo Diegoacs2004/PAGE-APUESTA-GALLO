@@ -1,45 +1,22 @@
-
-/* Color of the links BEFORE scroll */
-.navbar-scroll .nav-link,
-.navbar-scroll .navbar-toggler-icon,
-.navbar-scroll .navbar-brand {
-  color: #262626;
+.contenedor-total{
+  background-color: #2f2f2f;
 }
 
-/* Color of the navbar BEFORE scroll */
-.navbar-scroll {
-  background-color: #2F2F2F;
+.icono_lupa{
+  padding-left: 25rem;
 }
 
-/* Color of the links AFTER scroll */
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler-icon,
-.navbar-scroll .navbar-brand {
-  color: #262626;
-  
+.icono_logeo{
+  padding-right: 25rem;
 }
 
-.navbar-nav .nav-link {
-  color: #fff; /* Cambia el color de los enlaces a blanco */
+.contenedor-links{
+  padding-left: 15rem;
+  padding-right: 15rem;
+  text-decoration: none;
 }
 
-
-/* Color of the navbar AFTER scroll */
-.navbar-scrolled {
-  background-color: #fff;
+.nav a {
+  text-decoration: none;
+  color: white;
 }
-
-/* An optional height of the navbar AFTER scroll */
-.navbar.navbar-scroll.navbar-scrolled {
-  padding-top: auto;
-  padding-bottom: auto;
-}
-.navbar-brand {
-  font-size: unset;
-  height: 3.5rem;
-}
-
-body {
-  background-color: #ededed; /* Cambia el color de fondo del body */
-}
-
