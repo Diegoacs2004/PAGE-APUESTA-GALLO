@@ -14,7 +14,7 @@
     <?php require_once "../header.php"; ?>
     <!-- Carousel wrapper -->
     <div id="slide">
-        <div class="slide-inner">
+        <div class="slide-inner py-3">
             <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
             <div class="slide-item">
                 <img src="img/gallo_evento_1.jpg" style="width: 70%; height: 100%;">
