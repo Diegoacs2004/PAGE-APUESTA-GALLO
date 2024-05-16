@@ -43,4 +43,4 @@
                 <a class="p-2 link-secondary" href="#">Membresias</a>
             </nav>
         </div>
-    </nav>
+    </div>
