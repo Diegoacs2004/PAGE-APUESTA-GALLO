@@ -26,7 +26,7 @@
                     </a>
                 </div>
                 <div class="col-4 text-center">
-                    <a><img src="img/gallo_box_1.png" width="100" height="120" alt=""></a>
+                    <a><img src="https://yostar.store/cdn/shop/files/logo_c812fe9d-3714-4539-a7bb-d618deadfb21.png?v=1661853019&width=500" width="500" height="120" alt=""></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center  icono_logeo">
                     <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
