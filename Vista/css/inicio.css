@@ -1,31 +1,17 @@
 body,html{
    width: 100%;
    height: 100%;
-<<<<<<< Updated upstream
-   background-color: #EDEDED;
-}
-#slide {
-    width: 100%;
-    height: 100%;
-    background-color: #EDEDED;
-    margin-top: 70px  /* Margen superior, derecho, inferior e izquierdo respectivamente */
-=======
 }
 #slide {
     width: 100%;
     /* Ajusta la altura según sea necesario */
     height: 630px; /* Por ejemplo, establece una altura fija */
->>>>>>> Stashed changes
 }
 .carousel {
     opacity: 1.0;
     width: 100%;
-<<<<<<< Updated upstream
-    height: 100%;
-=======
     /* Ajusta la altura según sea necesario */
     height: 500px; /* Por ejemplo, establece una altura fija */
->>>>>>> Stashed changes
 }
 
 /* Carrusel */
@@ -40,10 +26,6 @@ body,html{
 }
 
 .slide-inner {
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -63,14 +45,7 @@ body,html{
     transition: opacity 0.6s ease-out;
     
 }
-<<<<<<< Updated upstream
-/* .slide-item img {
-    display: block;
-    height: 50px;
-} */
-=======
 
->>>>>>> Stashed changes
 .slide-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -149,9 +124,6 @@ body,html{
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
          -1px 0px 2px rgba(255, 255, 255, 0);
-<<<<<<< Updated upstream
-}
-=======
 }
 
 .section-template-padding{
@@ -230,4 +202,3 @@ body,html{
 
 
 
->>>>>>> Stashed changes
