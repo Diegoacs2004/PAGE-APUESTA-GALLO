@@ -1,6 +1,7 @@
 body,html{
    width: 100%;
    height: 100%;
+<<<<<<< Updated upstream
    background-color: #EDEDED;
 }
 #slide {
@@ -8,11 +9,23 @@ body,html{
     height: 100%;
     background-color: #EDEDED;
     margin-top: 70px  /* Margen superior, derecho, inferior e izquierdo respectivamente */
+=======
+}
+#slide {
+    width: 100%;
+    /* Ajusta la altura según sea necesario */
+    height: 630px; /* Por ejemplo, establece una altura fija */
+>>>>>>> Stashed changes
 }
 .carousel {
     opacity: 1.0;
     width: 100%;
+<<<<<<< Updated upstream
     height: 100%;
+=======
+    /* Ajusta la altura según sea necesario */
+    height: 500px; /* Por ejemplo, establece una altura fija */
+>>>>>>> Stashed changes
 }
 
 /* Carrusel */
@@ -27,7 +40,10 @@ body,html{
 }
 
 .slide-inner {
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -47,10 +63,14 @@ body,html{
     transition: opacity 0.6s ease-out;
     
 }
+<<<<<<< Updated upstream
 /* .slide-item img {
     display: block;
     height: 50px;
 } */
+=======
+
+>>>>>>> Stashed changes
 .slide-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -129,4 +149,85 @@ body,html{
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
          -1px 0px 2px rgba(255, 255, 255, 0);
+<<<<<<< Updated upstream
 }
+=======
+}
+
+.section-template-padding{
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.isolate{
+    position: relative;
+}
+
+.page-with{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.collection-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.contains-card{
+    border-radius: 1.2rem;
+    border-width: 0.0rem;
+}
+
+.card {
+    cursor:pointer;
+	position:relative;
+	padding:10px 20px;
+	background:white;
+	font-size:28px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	transition:all 1s;
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+		transition:all 1s;
+		}
+	&:after{
+		top:-1px;
+		left:-1px;
+		border-top:5px solid black;
+		border-left:5px solid black;
+	}
+	&:before{
+		bottom:-1px;
+		right:-1px;
+		border-bottom:5px solid black;
+		border-right:5px solid black;
+	}
+	&:hover{
+		border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+		background:rgba(0,0,0,.5);
+		color:white;
+		&:before,&:after{
+			width:100%;
+			height:100%;
+		}
+	}
+}
+
+
+
+>>>>>>> Stashed changes

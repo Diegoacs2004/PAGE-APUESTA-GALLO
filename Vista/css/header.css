@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
@@ -43,3 +44,51 @@ body {
   background-color: #ededed; /* Cambia el color de fondo del body */
 }
 
+=======
+body {
+  font-family: 'Radio Canada Big', sans-serif;
+  letter-spacing: 0.06rem;
+  background-color: #f9f8f6;
+}
+
+.icono_lupa {
+  padding-left: 20rem;
+}
+
+.icono_logeo {
+  padding-right: 20rem;
+}
+
+.contenedor-links {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  text-decoration: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #6C6C6C;
+  font-weight: bold;
+  position: relative; /* Añade posición relativa para que la línea se ajuste correctamente */
+}
+
+.nav a:hover {
+  color: #000; /* Cambia el color del texto al pasar el mouse */
+}
+
+.nav a::after {
+  content: ''; /* Agrega un pseudo-elemento para crear la línea */
+  position: absolute;
+  bottom: 1px; /* Ajusta la posición de la línea debajo del texto */
+  left: 0; /* Ajusta la posición de la línea */
+  width: 100%; /* Ajusta el ancho de la línea */
+  height: 2px; /* Ajusta la altura de la línea */
+  background-color: transparent; /* Establece el color inicial de la línea */
+  transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+}
+
+.nav a:hover::after {
+  background-color: #000; /* Cambia el color de la línea al pasar el mouse */
+  height: 3px; /* Aumenta el grosor de la línea al pasar el mouse */
+}
+>>>>>>> Stashed changes
