@@ -1,14 +1,14 @@
 body {
   font-family: 'Radio Canada Big', sans-serif;
-  /* Aplica la fuente 'Radio Canada Big' a todo el cuerpo */
+  letter-spacing: 0.06rem;
 }
 
 .icono_lupa {
-  padding-left: 25rem;
+  padding-left: 20rem;
 }
 
 .icono_logeo {
-  padding-right: 25rem;
+  padding-right: 20rem;
 }
 
 .contenedor-links {
@@ -17,9 +17,14 @@ body {
   text-decoration: none;
 }
 
+.contenedor-header{
+  background-color: #146ef5;
+}
+
+
 .nav a {
   text-decoration: none;
-  color: #6C6C6C;
+  color: #fff;
   font-weight: bold;
   position: relative; /* Añade posición relativa para que la línea se ajuste correctamente */
 }

@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f6f2;
+    background-image: url('../img/llo.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+/* Resto del CSS */
+.card-img-top {
+    border-radius: 20px;
+    padding: 10px;
+    height: 410px; 
+    object-fit: cover; 
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden; 
+}
+
+.card-body {
+    padding: 15px;
+    margin-top: -10px;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    width: 100px;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border: none;
+}
+
+h3, h5 {
+    color: rgb(0, 91, 228);
+}
+
+/* Estilos para el contorno de las tarjetas */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+    background-color: rgba(0, 0, 0, 0); 
+    z-index: -1; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+/* Colores para cada tarjeta en hover */
+.red:hover::before {
+    background-color: rgba(255, 0, 0, 0.5); 
+}
+
+.yellow:hover::before {
+    background-color: rgba(255, 255, 0, 0.5); 
+}
+
+.gray:hover::before {
+    background-color: rgba(128, 128, 128, 0.5); 
+}
+
+/* Efecto de elevación al hacer hover en las tarjetas */
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 1px; 
+}

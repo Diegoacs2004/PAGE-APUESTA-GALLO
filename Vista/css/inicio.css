@@ -1,15 +1,18 @@
-body,html{
-   width: 100%;
-   height: 100%;
-}
-#slide {
+/* Estilos generales */
+body, html {
     width: 100%;
     height: 100%;
 }
+
+#slide {
+    width: 100%;
+    height: 630px; /* Ajusta la altura según sea necesario */
+}
+
 .carousel {
     opacity: 1.0;
     width: 100%;
-    height: 100%;
+    height: 500px; /* Ajusta la altura según sea necesario */
 }
 
 /* Carrusel */
@@ -24,30 +27,26 @@ body,html{
 }
 
 .slide-inner {
-    
     background-size: cover;
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: calc( 500px + 3em);
+    height: calc(500px + 3em);
 }
+
 .slide-open:checked + .slide-item {
     position: static;
     opacity: 100;
 }
+
 .slide-item {
     display: flex;
     justify-content: center;
     position: absolute;
     opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
-    
 }
-/* .slide-item img {
-    display: block;
-    height: 50px;
-} */
+
 .slide-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -59,29 +58,31 @@ body,html{
     line-height: 35px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
     z-index: 10;
 }
+
 .slide-control.prev {
     left: 2%;
 }
+
 .slide-control.next {
     right: 2%;
 }
+
 .slide-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
+
 #slide-1:checked ~ .control-1,
 #slide-2:checked ~ .control-2,
 #slide-3:checked ~ .control-3 {
     display: block;
 }
+
 .slide-indicador {
     list-style: none;
     margin: 0;
@@ -93,27 +94,29 @@ body,html{
     text-align: center;
     z-index: 10;
 }
+
 .slide-indicador li {
     display: inline-block;
     margin: 0 5px;
 }
+
 .slide-circulo {
     color: #828282;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
+
 .slide-circulo:hover {
     color: #aaaaaa;
 }
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
+
 #titulo {
     width: 100%;
     position: absolute;
@@ -124,6 +127,89 @@ body,html{
     color: rgba(255, 255, 255, 1);
     font-family: 'Open Sans', sans-serif;
     z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-         -1px 0px 2px rgba(255, 255, 255, 0);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+
+/* Estilos de las tarjetas */
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px; /* Ajusta la separación horizontal entre las cartas */
+    justify-items: center;
+}
+
+.card {
+    background-color: #fff !important; /* Fondo negro */
+    border: 2px solid #333; /* Borde sólido de color gris oscuro */
+    width: 100%;
+    height: 500px; /* Ajusta la altura según sea necesario */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease, transform 0.3s ease; /* Transición para todos los cambios y transformaciones */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Ajusta el alineado vertical al inicio */
+    font-size: 1.5rem;
+    color: #000; /* Color del texto blanco */
+    text-align: left;
+    padding: 16px;
+}
+
+.card-content {
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content > div:not(:last-child) {
+    margin-bottom: 40px; /* Ajusta el espacio vertical entre los elementos */
+}
+
+.tittle-card {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px; /* Añade margen inferior */
+}
+
+.card p {
+    margin-bottom: 16px; /* Añade margen inferior */
+}
+
+/* Estilos de las tarjetas por color */
+.card-orange {
+    border-color: #ff6b00 !important; /* Fondo naranja */
+}
+
+.card-orange:hover {
+    background-color: #e65c00 !important;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.8);
+    transform: scale(1.05); /* Aumenta el tamaño de la carta en un 5% */
+}
+
+.card-blue {
+    border-color: #146ef5 !important; /* Fondo azul */
+}
+
+.card-blue:hover {
+    background-color: #0e54b8 !important;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(20, 110, 245, 0.8);
+    transform: scale(1.05); /* Aumenta el tamaño de la carta en un 5% */
+}
+
+.card-green {
+    border-color: #00D722 !important; /* Fondo verde */
+}
+
+.card-green:hover {
+    background-color: #00b61a !important;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 215, 34, 1);
+    transform: scale(1.05); /* Aumenta el tamaño de la carta en un 5% */
 }
