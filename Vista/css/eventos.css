@@ -1,27 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .contenedor-principal{
-    margin-top: 85px;
-    padding: 10px;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-top: 1px;
+    font-family: 'Radio Canada Big', sans-serif;
+    background-color: transparent !important;
+    width: 100%;
+    overflow-x: hidden;
+    
+    /* margin-top: 85px;
+    padding: 10px; */
+    /* margin-right: 5rem;
+    margin-left: 5rem; */
 }
 .contenedor-eventos{
+    background-color: #080808;
     display: flex;
     justify-content: center;
 }
-.card-body{
-    display: flex;
+.contenedor-title{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    color: #333;
     text-align: center;
 }
+
+.card:hover {
+    background-color: rgba(18, 97, 128, 0.8);
+    box-shadow: 0 0 50px rgba(20,110,245,0.8);
+    animation: pulse 1s infinite alternate;
+}
+
+.card-body {
+    background-color: #080808;
+    color: white;
+}
+
+.card-body:hover {
+    background-color: #146EF5;
+}
+
+.card-body img {
+    transition: transform 0.3s ease;
+}
+
+.card-body img:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 
 .contenedor-eventos span{
     color: #c8271d;
 }
-.contenedor-eventos button{
-    width: 50%; /* Ajusta el ancho al 100% del contenedor */
-    padding: 15px; /* Aumenta el relleno del botón */
-    border: none; /* Quita el borde del botón */
-    background-color: #c8271d; /* Cambia el color de fondo */
-    color: #ffffff; /* Cambia el color del texto */
+.contenedor-eventos h2{
+    color: white;
+}
+.contenedor-eventos button {
+    border-radius: 8px;
+    width: 60%;
+    padding: 15px;
+    border: none;
+    background-color: #c8271d;
+    color: #ffffff;
     font-size: 1.5rem;
-    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor-eventos button:hover {
+    background-color: #080808; 
+}
+
+.contenedor-eventos .btn-gallo{
+    border-radius: 8px;
+    width: 60%; 
+    padding: 15px; 
+    border: none; 
+    background-color: #146EF5; 
+    color: #ffffff; 
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+.contenedor-eventos .btn-gallo:hover{
+    box-shadow: 0 0 50px rgba(218,91,0,0.8);
+    background-color: #DA5B00;
+}
+.contenedor-eventos h2{
+   
+    font-weight: 800;
+}
+.contenedor-eventos h4{
+    font-weight: 800;
 }
