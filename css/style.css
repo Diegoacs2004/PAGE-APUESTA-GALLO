@@ -142,6 +142,7 @@ ol {
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
+    /* padding-left: 64px; */
 }
 
 .menu_fix {
@@ -149,7 +150,7 @@ ol {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: #030101;
     padding-bottom: 18px;
 }
 
@@ -215,6 +216,20 @@ ol {
     text-shadow: 5px 5px 0px rgba(166, 0, 132, 0.8);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: var(--brand);
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 27px 0;
 }
@@ -242,8 +257,8 @@ ol {
 ========================================*/
 
 #banner_part {
-    background: #2a0424;
-    padding: 250px 0 285px 0;
+    background: #11002F;
+    padding: 250px 0 100px 0;
     position: relative;
 }
 
@@ -264,7 +279,7 @@ ol {
 }
 
 .banner_text h1 {
-    font-size: 305px;
+    font-size: 100px;
     font-weight: 400;
     font-family: 'Anton', sans-serif;
     color: #fcb100;
@@ -281,7 +296,7 @@ ol {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
 .banner_text a {
@@ -327,7 +342,7 @@ ol {
             Game part start 
 ========================================*/
 #game_part{
-    background: #22021c;
+    background: #11002F;
     padding: 0 0 80px 0;
 }
 #about_game_part {
@@ -794,7 +809,10 @@ ol {
 ========================================*/
 
 #claim_part {
-    background: #22021c;
+    background-image: url("../img/fondo-inicial-compra-tu-gallo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background: #22021c; */
     padding: 100px 0 100px 0;
 }
 
@@ -1334,7 +1352,7 @@ p {
 
 #footer_part {
     padding: 55px 0 34px 0;
-    background: #22021c;
+    background: #000;
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
@@ -1442,7 +1460,7 @@ p {
 
 .foot_bot {
     padding: 20px 0;
-    background: #22021c;
+    background: #000;
     position: relative;
 }
 
@@ -1570,8 +1588,30 @@ p {
 ========================================*/
 
 .client_bg {
+    color: #fff;
     background: #22021c !important;
 }
+/* .card{
+    padding: 32px;
+} */
+.client_bg .card{
+    border: none;
+}
+.card .card-img{
+    height: 100%;
+    background-color: #22021c;
+}
+.card .img-gallo-mini{
+    width: 50px;
+}
+.client_bg .card-body{
+
+    background-color: #6E317A;
+}
+.client_bg .card-body p{
+    color: #fff;
+}
+
 
 .about_game {
     top: -220px;
@@ -1678,6 +1718,7 @@ p {
 /*========================================
             About game Start 
 ========================================*/
+
 
 .about_page_game {
     background: #2a0424 !important;
