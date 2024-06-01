@@ -343,7 +343,7 @@ ol {
 ========================================*/
 #game_part{
     background: #11002F;
-    padding: 0 0 80px 0;
+    padding: 50px 0 80px 0;
 }
 #about_game_part {
     background: #22021c;
@@ -813,7 +813,7 @@ ol {
     background-repeat: no-repeat;
     background-size:cover;
     /* background: #22021c; */
-    padding: 100px 0 100px 0;
+    padding: 0 0 100px 0;
 }
 
 .claim_text {
@@ -1539,8 +1539,8 @@ p {
 ========================================*/
 
 #about_banner {
-    padding: 185px 0 210px 0;
-    background: #2a0424;
+    padding: 185px 0 100px 0;
+    background: #11002F;
 }
 
 .about_menu h2 {
@@ -1589,12 +1589,10 @@ p {
 
 .client_bg {
     color: #fff;
-    background: #22021c !important;
+    background: #11002F !important;
 }
-/* .card{
-    padding: 32px;
-} */
 .client_bg .card{
+    background-color: transparent;
     border: none;
 }
 .card .card-img{
@@ -1605,8 +1603,9 @@ p {
     width: 50px;
 }
 .client_bg .card-body{
-
-    background-color: #6E317A;
+    border-radius: 16px;
+    background: linear-gradient(to right, #030303, #36005c); 
+    /* background-color: #FFFFE0; */
 }
 .client_bg .card-body p{
     color: #fff;
@@ -1791,11 +1790,11 @@ p {
 }
 
 .main_game {
-    padding: 79px 0 61px 0;
+    padding: 0px 0 61px 0;
 }
 
 .client_bg2 {
-    padding: 100px 0 38px 0 !important;
+    padding: 0px 0 38px 0 !important;
 }
 
 
@@ -1810,7 +1809,7 @@ p {
 
 #pricing_page {
     background: #22021c;
-    padding: 95px 0 130px 0;
+    padding: 120px 0 130px 0;
 }
 
 .pri_page {
