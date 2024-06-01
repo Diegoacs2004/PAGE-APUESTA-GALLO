@@ -142,6 +142,7 @@ ol {
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
+    /* padding-left: 64px; */
 }
 
 .menu_fix {
@@ -149,7 +150,7 @@ ol {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: #030101;
     padding-bottom: 18px;
 }
 
@@ -215,6 +216,20 @@ ol {
     text-shadow: 5px 5px 0px rgba(166, 0, 132, 0.8);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: var(--brand);
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 27px 0;
 }
@@ -242,8 +257,8 @@ ol {
 ========================================*/
 
 #banner_part {
-    background: #2a0424;
-    padding: 250px 0 285px 0;
+    background: #11002F;
+    padding: 250px 0 100px 0;
     position: relative;
 }
 
@@ -264,7 +279,7 @@ ol {
 }
 
 .banner_text h1 {
-    font-size: 305px;
+    font-size: 100px;
     font-weight: 400;
     font-family: 'Anton', sans-serif;
     color: #fcb100;
@@ -281,7 +296,7 @@ ol {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
 .banner_text a {
@@ -327,8 +342,8 @@ ol {
             Game part start 
 ========================================*/
 #game_part{
-    background: #22021c;
-    padding: 0 0 80px 0;
+    background: #11002F;
+    padding: 50px 0 80px 0;
 }
 #about_game_part {
     background: #22021c;
@@ -794,8 +809,11 @@ ol {
 ========================================*/
 
 #claim_part {
-    background: #22021c;
-    padding: 100px 0 100px 0;
+    background-image: url("../img/fondo-inicial-compra-tu-gallo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background: #22021c; */
+    padding: 0 0 100px 0;
 }
 
 .claim_text {
@@ -1139,6 +1157,13 @@ ol {
     font-family: 'Nunito', sans-serif;
     padding-bottom: 25px;
 }
+.card-body button{
+    border: none;
+    border-radius: 8px;
+    background-color:#2a0424;
+    color: #fff;
+    padding: 16px;
+}
 
 .btn:not(:disabled):not(.disabled) {
     padding-bottom: 25px;
@@ -1334,7 +1359,7 @@ p {
 
 #footer_part {
     padding: 55px 0 34px 0;
-    background: #22021c;
+    background: #000;
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
@@ -1442,7 +1467,7 @@ p {
 
 .foot_bot {
     padding: 20px 0;
-    background: #22021c;
+    background: #000;
     position: relative;
 }
 
@@ -1521,8 +1546,8 @@ p {
 ========================================*/
 
 #about_banner {
-    padding: 185px 0 210px 0;
-    background: #2a0424;
+    padding: 185px 0 100px 0;
+    background: #11002F;
 }
 
 .about_menu h2 {
@@ -1570,8 +1595,29 @@ p {
 ========================================*/
 
 .client_bg {
-    background: #22021c !important;
+    color: #fff;
+    background: #11002F !important;
 }
+.client_bg .card{
+    background-color: transparent;
+    border: none;
+}
+.card .card-img{
+    height: 100%;
+    background-color: #22021c;
+}
+.card .img-gallo-mini{
+    width: 50px;
+}
+.client_bg .card-body{
+    border-radius: 16px;
+    background: linear-gradient(to right, #030303, #36005c); 
+    /* background-color: #FFFFE0; */
+}
+.client_bg .card-body p{
+    color: #fff;
+}
+
 
 .about_game {
     top: -220px;
@@ -1679,6 +1725,7 @@ p {
             About game Start 
 ========================================*/
 
+
 .about_page_game {
     background: #2a0424 !important;
     padding: 58px 0 150px 0 !important;
@@ -1750,11 +1797,11 @@ p {
 }
 
 .main_game {
-    padding: 79px 0 61px 0;
+    padding: 0px 0 61px 0;
 }
 
 .client_bg2 {
-    padding: 100px 0 38px 0 !important;
+    padding: 0px 0 38px 0 !important;
 }
 
 
@@ -1769,7 +1816,7 @@ p {
 
 #pricing_page {
     background: #22021c;
-    padding: 95px 0 130px 0;
+    padding: 120px 0 130px 0;
 }
 
 .pri_page {
